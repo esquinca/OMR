@@ -68,6 +68,7 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => App\User::class,
+            'table' => 'user_h10omr',
         ],
 
         // 'users' => [
@@ -99,7 +100,7 @@ return [
         'users' => [
             'provider' => 'users',
             'email' => 'auth.emails.password',
-            'table' => 'password_resets',
+            'table' => 'password_resets_h10omr',
             'expire' => 60,
         ],
     ],

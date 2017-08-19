@@ -16,3 +16,7 @@ Route::get('/', function () {
 });
 
 Route::post('/submit_inputs', 'LoginProcessController@index');
+
+
+Route::get('auth/{provider}', 'Auth\AuthController@redirectToProvider');
+Route::get('auth/{provider}/callback', 'Auth\AuthController@handleProviderCallback');

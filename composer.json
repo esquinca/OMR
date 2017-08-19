@@ -9,7 +9,8 @@
         "laravel/framework": "5.2.*",
         "ied3vil/language-switcher": "^1.1",
         "laravelcollective/html": "^5.2.0",
-        "greggilbert/recaptcha": "^2.2"
+        "greggilbert/recaptcha": "^2.2",
+        "laravel/socialite": "2.0.20"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

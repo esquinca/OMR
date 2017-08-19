@@ -11,6 +11,8 @@ class User extends Authenticatable
      *
      * @var array
      */
+    protected $table = 'user_h10omr';
+
     protected $fillable = [
         'name', 'email', 'password',
     ];
@@ -23,4 +25,9 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    function socialProviders()
+    {
+        return $this->hasMany(SocialProvider::class);
+    }
 }

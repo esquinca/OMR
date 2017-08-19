@@ -59,7 +59,8 @@
         </div>
 
         <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 m-t-20 text-center">
+          <!-- <div class="col-xs-12 col-sm-12 col-md-12 m-t-20 text-center"> -->
+          <div class="col-xs-12 col-sm-12 col-md-12 text-center">
               <h3 class="box-title m-b-0 center-align"><b>-{{ trans('login.or') }}-</b></h3>
           </div>
         </div>
@@ -67,13 +68,14 @@
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-12 m-t-10 text-center">
             <div class="social">
+              <!--{{ url('/auth/twitter') }}-->
               <a href="javascript:void(0)" class="btn btn-twitter" data-toggle="tooltip"  title="Login with twitter">
                 <i aria-hidden="true" class="fa fa-twitter-square"></i>
               </a>
-              <a href="javascript:void(0)" class="btn btn-facebook" data-toggle="tooltip"  title="Login with Facebook">
+              <a href="{{ url('/auth/facebook') }}" class="btn btn-facebook" data-toggle="tooltip"  title="Login with Facebook">
                 <i aria-hidden="true" class="fa fa-facebook-official"></i>
               </a>
-              <a href="javascript:void(0)" class="btn btn-googleplus" data-toggle="tooltip"  title="Login with Google">
+              <a href="{{ url('/auth/google') }}" class="btn btn-googleplus" data-toggle="tooltip"  title="Login with Google">
                 <i aria-hidden="true" class="fa fa-google-plus-official"></i>
               </a>
             </div>
